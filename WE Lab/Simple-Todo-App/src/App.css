@@ -1,0 +1,42 @@
+.tableSec{
+  overflow-y: scroll;
+  padding-right: 10px;
+  max-height: 220px;
+}
+.counter {
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: var(--accent);
+  background: var(--accent-bg);
+  border: 2px solid transparent;
+  transition: border-color 0.3s;
+  margin-bottom: 24px;
+
+  &:hover {
+    border-color: var(--accent-border);
+  }
+  &:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+}
+table, th, td {
+  border: 1px solid black;
+  padding: 20px;
+}
+#center {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* center horizontally */
+  justify-content: flex-start; /* keeps counter stuck to the top */
+  height: 100vh;
+  padding-top: 150px;
+  gap: 25px;
+  flex-grow: 1;
+
+  @media (max-width: 1024px) {
+    padding: 32px 20px 24px;
+    gap: 20px;
+  }
+}

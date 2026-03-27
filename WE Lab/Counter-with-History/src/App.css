@@ -1,0 +1,26 @@
+.counter{
+  font-size: 50px;
+  font-weight: bold;
+  margin-right: 15px;
+}
+.historySection {
+  max-height: 150px;
+  overflow-y: auto;
+  box-sizing: border-box;
+  padding-right: 10px;
+  
+}
+#center {
+  display: flex;
+  flex-direction: column; /* stack value above buttons */
+  align-items: center; /* center horizontally */
+  justify-content: flex-start; /* keeps counter stuck to the top */
+  height: 100vh;
+  padding-top: 150px; 
+  gap: 30px; /* space between value and buttons */
+}
+
+.buttonRow {
+  display: flex;
+  gap: 10px; /* space between buttons */
+}

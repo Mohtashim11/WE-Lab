@@ -1,0 +1,113 @@
+/* APP BACKGROUND */
+.app-container {
+  min-height: 100vh;
+  background-color: #f3f4f6;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: #2563eb;
+  padding: 15px 30px;
+}
+
+/* FIXED NAV SPACING */
+.nav-links {
+  display: flex;
+  gap: 30px;        /* 🔥 THIS fixes your issue */
+  flex-wrap: wrap;  /* prevents breaking on small screens */
+}
+
+/* NAV LINKS */
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* HEADER (WHITE SECTION) */
+.header {
+  background: white;
+  padding: 30px;
+  text-align: center;
+  border-bottom: 1px solid #e5e4e7;
+}
+
+/* HEADER TEXT */
+.header h1 {
+  color: black;
+  font-weight: bold;
+  font-size: 32px;
+  margin: 0;
+}
+
+/* PAGE CONTENT */
+.page-content {
+  padding: 30px;
+}
+
+/* CARD */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+/* HEADINGS */
+.heading {
+  font-size: 28px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 20px;
+}
+
+/* TABLE CONTAINER */
+.table-container {
+  overflow-x: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+/* TABLE */
+.student-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+/* HEADER */
+.student-table th {
+  background-color: #2563eb;
+  color: white;
+  padding: 12px;
+  font-weight: bold;
+}
+
+/* ROWS */
+.student-table td {
+  padding: 12px;
+  border-bottom: 1px solid #e5e4e7;
+}
+
+/* ZEBRA STRIPES */
+.student-table tr:nth-child(even) {
+  background-color: #f9fafb;
+}
+
+/* HOVER EFFECT */
+.student-table tr:hover {
+  background-color: #eef2ff;
+}

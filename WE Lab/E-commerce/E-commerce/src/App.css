@@ -1,0 +1,136 @@
+/* App container */
+.app-container {
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9a1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Make all main headings black */
+h1, h2, h3 {
+  color: #000000; /* black */
+}
+
+/* Specifically for card titles */
+.card h3 {
+  color: #000000; /* black for product/item names */
+}
+
+/* Navbar */
+.navbar {
+  background-color: #1d4ed8;
+  color: white;
+  padding: 16px 24px;
+}
+
+
+.nav-links {
+  display: flex;
+  gap: 24px; /* space between links */
+  justify-content: center;
+  font-weight: bold;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Main content */
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+/* Products container - horizontal row of cards */
+.products-container {
+  display: flex;           /* horizontal layout */
+  flex-wrap: nowrap;       /* stay in one row, allow horizontal scroll if needed */
+  gap: 20px;               /* space between cards */
+  padding: 10px;
+  overflow-x: auto;        /* scroll if too wide for screen */
+  justify-content: flex-start;
+}
+
+/* Optional: hide scrollbar nicely */
+.products-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.products-container::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0.2);
+  border-radius: 4px;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #e5e4e7;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  padding: 20px;
+  flex: 0 0 260px;       /* fixed width for horizontal layout */
+  min-height: 180px;     /* optional: same height for all cards */
+  text-align: left;
+  transition: transform 0.2s, box-shadow 0.3s, border-color 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  border-color: #aa3bff;
+}
+
+/* Card text */
+.card h3 {
+  margin: 0 0 10px 0;
+  font-size: 20px;
+  color: #08060d;
+}
+
+.card p {
+  font-size: 16px;
+  color: #6b6375;
+  margin: 0 0 12px 0;
+}
+
+/* Card button */
+.card button {
+  padding: 8px 16px;
+  border: 1px solid #aa3bff;
+  background-color: rgba(170, 59, 255, 0.1);
+  color: #aa3bff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.card button:hover {
+  background-color: #aa3bff;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .card {
+    max-width: 100%;
+    padding: 16px;
+  }
+
+  .card h3 {
+    font-size: 18px;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+}
